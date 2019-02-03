@@ -12,7 +12,6 @@ export const findAll = (initail: string, tree: TreeNode): string[] => {
   if (tree.children) {
     for (let i = 0; i < tree.children.length; i++) {
       const node = tree.children[i];
-
       findAll(initail, node).forEach(x => result.push(x));
     }
   }
